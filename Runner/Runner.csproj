@@ -11,21 +11,9 @@
     <ItemGroup>
       <ProjectReference Include="..\day_five\day_five.csproj" />
       <ProjectReference Include="..\day_four\day_four.csproj" />
+      <ProjectReference Include="..\day_seven\day_seven.csproj" />
       <ProjectReference Include="..\day_six\day_six.csproj" />
       <ProjectReference Include="..\day_three\day_three.csproj" />
       <ProjectReference Include="..\day_two\day_two.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-      <None Update="six_input.txt">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="six_input_test.txt">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="six_input_test2.txt">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-    </ItemGroup>
-
 </Project>

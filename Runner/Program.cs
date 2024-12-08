@@ -1,4 +1,6 @@
-﻿//var res = PaperPrinter.Print2();
+﻿
+// ----- day whatever day this was ------
+//var res = PaperPrinter.Print2();
 //Console.WriteLine(res);
 
 //75,97,47,61,53
@@ -6,7 +8,8 @@
 //97,13,75,29,47
 
 
-using System.Text;
+// ----- day 6 ------
+/*using System.Text;
 using day_six;
 
 var map = new GuardMap();
@@ -64,4 +67,12 @@ foreach (var space in visitedSpaces)
     }
 }
 
-Console.WriteLine(baddies);
+Console.WriteLine(baddies);*/
+
+// ----- day 7 ------
+
+using day_seven;
+
+var bridgeRepair = new BridgeRepair();
+var res = bridgeRepair.GetTotalCalibrationResult();
+Console.WriteLine(res);

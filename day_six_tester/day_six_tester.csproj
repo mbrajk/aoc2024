@@ -10,11 +10,4 @@
     <ItemGroup>
       <ProjectReference Include="..\day_six\day_six.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-      <None Update="six_input.txt">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-    </ItemGroup>
-
 </Project>
