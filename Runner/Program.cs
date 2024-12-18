@@ -79,9 +79,16 @@ Console.WriteLine(res);*/
 
 
 // ----- day 8 -----
-using day_eight;
+// using day_eight;
+//
+// var locator = new AntennaAntinodeLocator();
+// var res = locator.GetAntinodeCount2();
+// Console.WriteLine(res);
 
-var locator = new AntennaAntinodeLocator();
-var res = locator.GetAntinodeCount2();
+
+// ---- day 9 ----
+using day_nine;
+
+var fragmenter = new DiskFragmenter();
+var res = fragmenter.FragIt();
 Console.WriteLine(res);
-
