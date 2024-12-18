@@ -71,8 +71,17 @@ Console.WriteLine(baddies);*/
 
 // ----- day 7 ------
 
-using day_seven;
+/*using day_seven;
 
 var bridgeRepair = new BridgeRepair();
 var res = bridgeRepair.GetTotalCalibrationResult();
+Console.WriteLine(res);*/
+
+
+// ----- day 8 -----
+using day_eight;
+
+var locator = new AntennaAntinodeLocator();
+var res = locator.GetAntinodeCount();
 Console.WriteLine(res);
+
