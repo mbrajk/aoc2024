@@ -82,6 +82,6 @@ Console.WriteLine(res);*/
 using day_eight;
 
 var locator = new AntennaAntinodeLocator();
-var res = locator.GetAntinodeCount();
+var res = locator.GetAntinodeCount2();
 Console.WriteLine(res);
 

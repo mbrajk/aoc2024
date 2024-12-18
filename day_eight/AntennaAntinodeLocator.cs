@@ -77,4 +77,46 @@ public class AntennaAntinodeLocator
         
         return antennaPoints.Distinct().Count();
     }
+
+    public int GetAntinodeCount2()
+    {
+        var antennaPoints = new List<(int x, int y)>();
+        foreach (var antennaType in _antennas)
+        {
+            if (antennaType.Value.Count <= 1)
+            {
+                //there is as yet insufficient antennas for a meaningful answer
+                continue;
+            }
+
+            var antennas = antennaType.Value;
+            for (int i = 0; i < antennas.Count; i++)
+            {
+                for (int j = 0; j < antennas.Count; j++)
+                {
+                    if(i == j) continue;
+                    var firstAntenna = antennas[i];
+                    var secondAntenna = antennas[j];
+                    (int x, int y) distance = ((secondAntenna.x - firstAntenna.x),
+                        (secondAntenna.y - firstAntenna.y));
+
+                    var antinodeX = firstAntenna.x;
+                    var antinodeY = firstAntenna.y;
+                    do
+                    {
+                        antennaPoints.Add((antinodeX, antinodeY));
+                        antinodeX = (antinodeX - distance.x);
+                        antinodeY = (antinodeY - distance.y);
+
+                    } while (
+                        antinodeX >= 0 && 
+                        antinodeY >= 0 &&
+                        antinodeX < _array.GetLength(0) &&
+                        antinodeY < _array.GetLength(1));
+                }
+            }
+        }
+        
+        return antennaPoints.Distinct().Count();
+    }
 }
